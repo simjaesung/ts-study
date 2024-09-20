@@ -6,7 +6,7 @@ let age :number = 20;
 let married :boolean = false;
 ```
 
-`*string, number, boolean null, [], ...등등` 존재한다.*
+`string, number, boolean null, [], ...등등` 존재한다.
 
 `null`이랑 `undefined`도 존재하는데 이는 사용하지는 않는다.
 
@@ -86,10 +86,13 @@ name = 30;
 하지만 일일이 타입을 지정해주지 않아도 자동으로 타입을 지정해준다.
 
 <img width="426" alt="image" src="https://github.com/user-attachments/assets/0df86f61-874e-4335-8afc-d16e4d724e07">
+<br/>
 
 <img width="431" alt="image" src="https://github.com/user-attachments/assets/79fddc2e-0a10-40cc-bb47-84941aaa63b6">
 
+
 그리고 선언만해두고 할당해주지 않으면 어떻게 될지 살펴보자
+
 
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/0cefd9a8-55ec-4322-81f6-aad99137c3b8">
 
