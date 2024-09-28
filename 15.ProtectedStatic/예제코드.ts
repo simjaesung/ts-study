@@ -1,21 +1,22 @@
 //protect 속성은 private와 다르게 상속받는 클래스가 사용할 수 있다.
 //private은 상속받는 클래스에서 접근할 수 없다.
-class User{
+class Dust{
     protected x : number = 10;
     private y : number = 10;
+    public z : number = 20;
 }
 
-class NewUser extends User{
+class smallDust extends Dust{
     testFunc(){
         this.x = 20;
         //this.y = 30; //ts 상 error, 출력이 되긴 한다.
     }
 }
 
+let kdust = new smallDust();
+kdust.x = 11; //protected로 선언된 변수는 외부에서 수정이 불가능하다.
+kdust.z = 11;
 
-let tmpUser = new NewUser();
-tmpUser.testFunc();
-console.log(tmpUser);
 
 //static 키워드
 
@@ -35,7 +36,6 @@ class PP2{
 class PP22 extends PP2{}
 console.log(PP2);
 console.log("PP22.x:",PP22.x);
-
 PP22.x = 30; // 자식 클래스에서 수정 시 새로운 static 변수가 생성되는 것
 
 console.log("PP22.x:",PP22.x); //30
